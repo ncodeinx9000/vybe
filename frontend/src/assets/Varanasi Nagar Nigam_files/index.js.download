@@ -1,0 +1,63 @@
+$(document).ready(function () {
+    $('#ExisitingProperty').DataTable();
+});
+
+$(document).ready(function () {
+    $(".property-details button").click(function () {
+        $("i").toggleClass("down");
+    });
+});
+
+//Show full screen script here
+$(document).ready(function () {
+    $(".full_screen").click(function () {
+        $("body").toggleClass("show_full");
+        $(".fa-expand").toggleClass("fa-compress");
+    });
+    //$("#EditDep .close").click()
+
+    $(".closeEdit").on('click', function () {
+        $('#EditDep').modal('hide');
+        $('#AddDep').modal('hide');
+    });
+});
+//Show full screen script here end
+
+$(window).scroll(function () {
+    var sticky = $('.sticky'),
+        scroll = $(window).scrollTop();
+
+    if (scroll >= 300) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+});
+
+
+
+
+$(document).ready(function () {
+    $("#updateStatus").click(function () {
+        $("#updatedzone .modal-body table").addClass("remove-class");
+        $(".no-btn").addClass("remove-class");
+        $("#updateStatus ").addClass("remove-class");
+        $(".remove-class1 ").addClass("displayNew-class");
+        $("#updatedzone .modal-header").addClass("remove-class");
+        $("#updatedzone .modal-content").addClass("mcwidth");
+    })
+});
+$(document).ready(function () {
+    $("#updateStatus").click(function () {
+        $(".sa-success").addClass("hide");
+        setTimeout(function () {
+            $(".sa-success").removeClass("hide");
+        }, 10);
+    });
+});
+
+//Menu Script here
+$(document).ready(function () {
+    $('.menu').on('click', function () {
+        $('.content').hide();
+        $(this).find('.content').show();
+
+    });
+});
