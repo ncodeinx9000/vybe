@@ -1,7 +1,7 @@
 import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import OnlineUser from "../components/onlineUser";
+import OnlineUser from "../components/OnlineUser";
 import { setSelectedUser } from "../redux/messageSlice";
 import dp from "../assets/dp.png";
 function Messages() {
