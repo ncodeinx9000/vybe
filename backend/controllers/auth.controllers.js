@@ -36,7 +36,7 @@ export const signUp = async (req, res) => {
       httpOnly: true,
       maxAge: 10 * 365 * 24 * 60 * 60 * 1000,
      secure: true,
-      sameSite: "none",
+      sameSite: "None",
     });
 
     return res.status(201).json(user);
@@ -69,7 +69,7 @@ export const signIn = async (req, res) => {
       httpOnly: true,
       maxAge: 10 * 365 * 24 * 60 * 60 * 1000,
       secure: true,
-      sameSite: "none",
+      sameSite: "None",
     });
 
     return res.status(200).json(user);
